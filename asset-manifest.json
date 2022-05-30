@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.911d71c3.css",
+    "main.js": "/static/js/main.a2a0a82e.js",
+    "index.html": "/index.html",
+    "static/media/icon-moon.svg": "/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
+    "static/media/icon-cross.svg": "/static/media/icon-cross.6ee81d30b75cab19d6f7314624fcc4d6.svg",
+    "main.911d71c3.css.map": "/static/css/main.911d71c3.css.map",
+    "main.a2a0a82e.js.map": "/static/js/main.a2a0a82e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.911d71c3.css",
+    "static/js/main.a2a0a82e.js"
+  ]
+}
