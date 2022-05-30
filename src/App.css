@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    position: relative;
+    background-image: url('./images/bg-mobile-light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    /* z-index: -1; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+.todo-input {
+    width: 100%;
+    margin: 2rem auto;
 }
 
-.App-link {
-  color: #61dafb;
+
+.container {
+    /* padding: 1rem 0rem; */
+    border-radius: 7px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: -25px;
+ 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.todo-list {
+    min-height: 30vh;
+    box-shadow: 0 0 5px 10px rgb(0, 0, 0, 0.05);
+}
+
+.todo-list__item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 20px;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.1);
+    background-color: white;
+}
+.todo-list__item:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+
+.todo-item__check:checked + .todo-text {
+    opacity: .2;
+    text-decoration: line-through;
+}
+.todo-text {
+    margin-right: auto;
+    list-style: none;
+}
+
+
+
+
+.todo-list-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+}
+.states {
+    position: relative;
+    /* bottom: -80px; */
+    padding: 1rem 3rem;
+    border-radius: 7px;
+    background-color:white;
+    box-shadow: 0 0 5px 10px rgb(0, 0, 0, 0.05);
+    display: flex;
+    
+    gap: 2rem;
+    justify-content: center;
+}
+
+.foot {
+    text-align: center;
+    margin: 2rem auto;
 }
